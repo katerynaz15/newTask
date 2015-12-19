@@ -21,6 +21,7 @@ window.onload = function() {
                 id: userID,
                 clickedButton: this.value
             };
+            var myStorage = JSON.parse(localStorage.getItem("users"));
             console.log(typeof(localStorage.getItem("users")));
             if(localStorage.getItem("users")==null) {
                 localStorage.setItem("users", JSON.stringify([userInfo])); 
